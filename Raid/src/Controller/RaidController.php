@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class RaidController extends AbstractController
 {
     /**
-     * @Route("/raid", name="raid")
+     * @Route("/actualités", name="actualités")
      */
     public function index()
     {
