@@ -28,4 +28,12 @@ class RaidController extends AbstractController
             'age' => 31
         ]);
     }
+
+    /**
+     * @Route("/actualités/12", name="actualités_show")
+     */
+
+    public function show(){
+        return $this->render('raid/show.html.twig');
+    }
 }
