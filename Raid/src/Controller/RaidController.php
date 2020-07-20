@@ -47,4 +47,32 @@ class RaidController extends AbstractController
             'article' => $article
         ]);
     }
+
+    /**
+     * @Route("/factions", name="factions_show")
+     */
+    public function factions(){
+        return $this->render("raid/factions.html.twig");
+    }
+
+     /**
+     * @Route("/arene", name="arene_show")
+     */
+    public function arene(){
+        return $this->render("raid/arene.html.twig");
+    }
+
+     /**
+     * @Route("/donjons", name="donjons_show")
+     */
+    public function donjons(){
+        return $this->render("raid/donjons.html.twig");
+    }
+
+     /**
+     * @Route("/clanboss", name="clanboss_show")
+     */
+    public function clanboss(){
+        return $this->render("raid/clanboss.html.twig");
+    }
 }
